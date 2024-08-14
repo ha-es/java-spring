@@ -1,7 +1,7 @@
 package com.example.firstproject.controller;
 
 
-import com.example.firstproject.api.MemberDto;
+import com.example.firstproject.dto.Member2Dto;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,14 +27,14 @@ public class PutController {
 
     // String 형식
     @PutMapping(value = "/member1")
-    public String postMemberDto1(@RequestBody MemberDto memberDto){
+    public String postMemberDto1(@RequestBody Member2Dto memberDto){
         return memberDto.toString();
     }
 
 
     //JSON 형식
     @PutMapping(value = "/member2")
-    public MemberDto postMemberDto2(@RequestBody MemberDto memberDto){
+    public Member2Dto postMemberDto2(@RequestBody Member2Dto memberDto){
         return memberDto;
     }
 }

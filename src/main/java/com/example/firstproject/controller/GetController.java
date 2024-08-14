@@ -1,7 +1,7 @@
 package com.example.firstproject.controller;
 
 
-import com.example.firstproject.api.MemberDto;
+import com.example.firstproject.dto.Member2Dto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -56,7 +56,7 @@ public class GetController {
 
     //MemberDto 에서 받아 온 값 호출하기
     @GetMapping(value = "/request3")
-    public String getRequestParam3(MemberDto memberDto){
+    public String getRequestParam3(Member2Dto memberDto){
         return memberDto.toString();
     }
 }

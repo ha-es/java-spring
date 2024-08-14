@@ -1,6 +1,6 @@
-package com.example.firstproject.api;
+package com.example.firstproject.dto;
 
-public class MemberDto {
+public class Member2Dto {
 
     private String name;
     private String email;
